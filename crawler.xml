@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<!-- Put site-specific property overrides in this file. -->
+
+<configuration>
+ 	<property>
+        	<name>reduce.concurrency.value</name>
+            <value>2</value>
+            <description>reduce阶段爬虫的并发值</description>
+    </property>
+    <property>
+            <name>crawler.deep</name>
+            <value>10</value>
+            <description>爬行深度</description>
+    </property>
+    <property>
+            <name>wait.job.finished.millisecond</name>
+            <value>5000</value>
+            <description>等待作业完成的睡眠值</description>
+    </property>
+    
+
+    <property>
+            <name>bloom.filter.vector.size</name>
+            <value>100000000</value>
+            <description>bloomfilter的大小</description>
+    </property>
+    <property>
+            <name>bloom.file.func.num</name>
+            <value>6</value>
+            <description>bloomfilter的散列函数的个数</description>
+    </property>
+
+    <property>
+            <name>seed.files.dir</name>
+            <value>crawler/in</value>
+            <description>种子文件夹位置</description>
+    </property>
+
+    <property>
+            <name>seed.files.tmp.dir</name>
+            <value>crawler/tmp_in<value>
+    </property>
+
+
+    <property>
+            <name>crawler.result.tmp.dir</name>
+            <value>crawler/crawler_tmp_dir</value>
+            <description>爬虫结果临时文件夹位置</description>
+    </property>
+    <property>
+            <name>update.bloom.filter.job.output.dir</name>
+            <value>crawler/ubf_outputdir</value>
+            <description></description>
+    </property>
+    <property>
+            <name>crawler.result.dir</name>
+            <value>crawler/doc</value>
+            <description>爬虫结果文件夹位置</description>
+    </property>
+    <property>
+            <name>crawler.stand.result.dir</name>
+            <value>crawler/csrd</value>
+    </property>
+    <property>
+            <name>bloom.filter.file.name</name>
+            <value>crawler/bloomfilter</value>
+            <description></description>
+    </property>
+</configuration>
